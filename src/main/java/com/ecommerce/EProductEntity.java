@@ -18,7 +18,7 @@ public class EProductEntity {
 		// TODO Auto-generated constructor stub
 	}
 
-	public EProductEntity(long iD, String pName, BigDecimal pPrice, Date dateAdded, String pHDD, String pCPU,
+	public EProductEntity(long iD,String pName, BigDecimal pPrice, Date dateAdded, String pHDD, String pCPU,
 			String pRAM) {
 		super();
 		ID = iD;

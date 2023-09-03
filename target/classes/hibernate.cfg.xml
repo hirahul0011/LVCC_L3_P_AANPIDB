@@ -29,6 +29,7 @@
 	    <property name="connection.url">jdbc:mysql://127.0.0.1:3306/ecommerce</property>
 	    <property name="connection.username">root</property>
 	    <property name="connection.password">Password0*</property>
+	    <!-- <property name="hibernate.hbm2ddl.auto">create-drop</property> -->
 	    
 	    <property name="current_session_context_class">thread</property>        
         <property name="connection.pool_size">3</property>       
@@ -36,7 +37,7 @@
 	    <property name="show_sql">true</property>
 	    <property name="format_sql">true</property>
 	    
-	    <mapping resource="EProduct.hbm.xml"/>
+	    <mapping resource="EProductEntity.hbm.xml"/>
         
     </session-factory>
  
