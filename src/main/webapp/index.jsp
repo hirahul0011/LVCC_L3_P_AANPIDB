@@ -11,7 +11,7 @@
 	<h1>Enter New Product Details</h1>
 	<form action="NewProduct" method="post">
 		Enter Product Name:&nbsp; <input type="text" name="pName"><br><br>
-		Enter Product Price:&nbsp; <input type="number" name="price"><br><br>
+		Enter Product Price:&nbsp; <input type="text" name="price"><br><br>
 		Enter Product HDD:&nbsp; <input type="text" name="hdd"><br><br>
 		Enter Product CPU:&nbsp; <input type="text" name="cpu"><br><br>
 		Enter Product RAM:&nbsp; <input type="text" name="ram"><br><br>

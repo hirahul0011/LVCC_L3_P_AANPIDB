@@ -47,6 +47,8 @@ public class NewProduct extends HttpServlet {
 		Transaction transaction=session.beginTransaction(); //Used only to Update/Insert/Delete
 															//Not required for Read
 		
+		PrintWriter out = response.getWriter();
+		
 		boolean isNumber=true;
 		
 		try {
@@ -73,7 +75,7 @@ public class NewProduct extends HttpServlet {
 			
 			session.close();
 			
-			 PrintWriter out = response.getWriter();
+			 
 			 out.println("<html><body>");
 			 out.println("<b>Record Added Successfully!!</b><br><br>");
 			 out.println("<b>Updated Product List</b><br><br><table>");
@@ -83,6 +85,9 @@ public class NewProduct extends HttpServlet {
 					"</td><td> HDD: " + p.getpHDD() + "</td><td> CPU: " + p.getpCPU() + "</td><td> RAM: " + p.getpRAM()+"<br></td></tr>");
 			 }			 
 			 out.println("</table></body></html>");
+		}else {
+			request.getRequestDispatcher("index.jsp").include(request, response);
+			out.println("<span style='color:red'>Invalid Price, Please try again!</span>");
 		}
 			
 		
